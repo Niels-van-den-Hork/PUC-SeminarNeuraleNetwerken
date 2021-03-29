@@ -96,7 +96,8 @@ Belangrijk: Geef het netwerk twee hidden layers met ieder maar twee neuronen.
 
 from sklearn.neural_network import MLPClassifier
 
-#Jouw code hier
+#Jouw code hier:
+#...
 
 """#### Nu kunnen we niet de MAE gebruiken, waarom niet?
 
@@ -180,7 +181,8 @@ Tijdens het trainen, zie je rechts welk gebied welke predictie heeft. De bolletj
 
 # Wijn Classificatie
 
-Vorige week hadden we de kwaliteit van rode wijn voorspeld, nu gaan we voorspellen of iets rode of witte wijn is.
+Vorige week hadden we de kwaliteit van rode wijn voorspeld, nu gaan we voorspellen of iets rode of witte wijn is. We hebben nu twee csv bestanden: [witte wijn](https://drive.google.com/file/d/1OVU_eXXO157uUF98Zc7Vct2PveQs5VMk/view?usp=sharing) en [rode wijn
+](https://drive.google.com/file/d/1UWJSj362Bb6XIJ3wVEFT7hw3yQnqNYlv/view?usp=sharing)
 """
 
 import pandas as pd
@@ -230,7 +232,6 @@ dataset.head()
 
 #typ hier je code 
 # ...
-print(len(red_wines),len(white_wines)) #ANSWER***
 
 """## Welke invloed heeft dit wellicht op een neuraal netwerk wanneer we het hierop zullen trainen?
 
@@ -253,14 +254,14 @@ maak_histogram(dataset,'pH')
 
 """## Maak minstens drie histogrammen van de data in andere kolommen.
 
-Je kunt de exacte kolom namen vinden in de `.columns` eigenschap van een (pandas) dataset `dataset.columns`
+Je kunt de exacte kolom namen vinden in de `.columns` eigenschap van een (pandas) dataset `dataset.columns`. Maak minstens drie histogrammen van verschillende kolommen
 """
 
+#Jouw code hier:
+#...
 
-
-
-
-
+#Jouw code hier:
+#...
 
 """Train en test een netwerk op deze data.
 
@@ -421,7 +422,8 @@ for i in range(3):
 ## Controleer of de data genormaliseerd is.
 """
 
-
+#Jouw code hier:
+#...
 
 """## Normaliseer de data als dat nodig is.
 
@@ -436,12 +438,13 @@ test_data = test_data.reshape((10000,784))
 """## Train en test een netwerk op de 10000 digits
 
 Omdat dit veel digits zijn, zal je ongeveer 30 seconden moeten wachten.
-In de praktijk is het niet gek wanneer het netwerk 24 uur moet trainen. Voor sommig onderzoek (met name [natural language processing](https://en.wikipedia.org/wiki/Natural_language_processing) ) kan het nog verder oplopen. Een extreem geval is [GPT-3](https://lambdalabs.com/blog/demystifying-gpt-3/) wat 355 GPU jaar heeft getrained. Dat wil zeggen dat het aantal GPU keer de hoeveelheid trainingtijd gelijk is aan 355 jaar. Dit heeft (naar schatting) bijna 5 miljoen euro gekost! Het trainen van neurale netwerken wordt gebruikelijk op GPUs (videokaarten) uitgevoerd, dat komt omdat deze goed zijn in matrix rekenen. Normaal gebruiken 3d videogames deze functionaliteit veel voor rendering en [ray-tracing](https://en.wikipedia.org/wiki/Ray_tracing_(graphics)). Tegenwoordig zijn er ook hardware kaarten die speciaal ontworpen zijn voor neurale netwerken.
+In de praktijk is het niet gek wanneer het netwerk 24 uur moet trainen. Voor sommig onderzoek (met name [natural language processing](https://en.wikipedia.org/wiki/Natural_language_processing) ) kan het nog verder oplopen. Een extreem geval is [GPT-3](https://lambdalabs.com/blog/demystifying-gpt-3/) wat 355 GPU jaar heeft getrained. Dat wil zeggen dat het aantal GPU keer de hoeveelheid trainingtijd gelijk is aan 355 jaar. Dit heeft (naar schatting) bijna 5 miljoen euro aan stroom gekost!  Het trainen van neurale netwerken wordt gebruikelijk op GPUs (videokaarten) uitgevoerd, dat komt omdat deze goed zijn in matrix rekenen. Normaal gebruiken 3d videogames deze functionaliteit veel voor rendering en [ray-tracing](https://en.wikipedia.org/wiki/Ray_tracing_(graphics)). Tegenwoordig zijn er ook hardware kaarten die speciaal ontworpen zijn voor neurale netwerken.
 """
 
 from sklearn.neural_network import MLPClassifier
 
-
+#Jouw code hier:
+#...
 
 print('Accuracy: {}'.format(acc))
 
